@@ -2,7 +2,7 @@
 
 Uni-CITS is a web-based management portal designed for university departments to streamline administrative tasks. It provides a centralized platform for managing academic notices, faculty directories, course listings, student records, and enrollments.
 
-## 🚀 Features
+##  Features
 
 ### Administrative Management
 - **Secure Authentication:** Admin registration and login system with password hashing (`password_hash`).
@@ -17,14 +17,14 @@ Uni-CITS is a web-based management portal designed for university departments to
 - **Enrollment System:** Link students to specific courses within active academic sessions.
 - **Academic Sessions:** Manage active semesters (e.g., Fall 2024, Spring 2025) and toggle their active status.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend:** PHP 8.x
-- **Database:** MySQL / MariaDB
+- **Database:** MySQL
 - **Frontend:** Bootstrap 5, HTML5, CSS3, JavaScript (Vanilla)
 - **Icons/Assets:** UIU Logo, Google Fonts (Poppins)
 
-## 📁 Project Structure
+##  Project Structure
 
 | File | Description |
 | :--- | :--- |
@@ -57,7 +57,7 @@ Uni-CITS is a web-based management portal designed for university departments to
    - Place the project folder in `C:\xampp\htdocs\university-cits\`.
    - Access the application via `http://localhost/university-cits/login.php`.
 
-## 🗄️ Database Schema
+##  Database Schema
 
 The system uses a relational database with the following key tables:
 
@@ -70,7 +70,7 @@ The system uses a relational database with the following key tables:
 - **notices:** Stores department announcements.
 - **academic_sessions:** Manages semester timelines.
 
-## 🔒 Security Measures
+##  Security Measures
 
 - **Prepared Statements:** All SQL queries in `process.php` and `signup.php` use `mysqli::prepare` to prevent SQL Injection.
 - **Password Hashing:** Uses `PASSWORD_DEFAULT` (Bcrypt) for storing sensitive user credentials.
@@ -83,3 +83,4 @@ This project is developed for educational purposes within the University Departm
 
 ---
 *Developed for Uni-CITS Administration*
+*Developed by Labib Azad [visit portfolio](https://labibazad.vercel.app/)*
