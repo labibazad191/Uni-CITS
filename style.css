@@ -1,0 +1,153 @@
+/* University Custom Design System */
+:root {
+    --primary-color: #002147;
+    /* Heritage Navy */
+    --secondary-color: #d4af37;
+    /* Academic Gold */
+    --accent-light: #0056b3;
+    --text-main: #1a1a1a;
+    --text-muted: #636e72;
+    --bg-body: #f8f9fa;
+    --white: #ffffff;
+    --glass: rgba(255, 255, 255, 0.95);
+    --card-shadow: 0 8px 24px rgba(0, 33, 71, 0.06);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar & Logo */
+.navbar {
+    background: var(--glass) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0.8rem 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(0, 33, 71, 0.92) 0%, rgba(0, 86, 179, 0.85) 100%),
+        url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=1470') no-repeat center center/cover;
+    color: var(--white);
+    padding: 160px 0;
+    margin-bottom: 4rem;
+}
+
+.hero-section h1 {
+    letter-spacing: -1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Notice Board Stylings */
+.notice-board {
+    max-height: 650px;
+    padding: 10px;
+}
+
+.notice-item {
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-left: 4px solid var(--primary-color) !important;
+    margin-bottom: 20px;
+    border-radius: 12px !important;
+    transition: var(--transition);
+    padding: 1.5rem !important;
+    background: var(--white);
+}
+
+.notice-item:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: var(--card-shadow);
+    border-left-color: var(--secondary-color) !important;
+}
+
+.notice-item h5 {
+    font-weight: 600;
+    color: var(--primary-color) !important;
+}
+
+/* Faculty Cards */
+.faculty-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--white);
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.faculty-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 33, 71, 0.12);
+}
+
+.faculty-card img {
+    height: 320px;
+    object-fit: cover;
+    filter: brightness(0.95);
+    transition: var(--transition);
+}
+
+.faculty-card:hover img {
+    filter: brightness(1.05);
+}
+
+/* Section Headers */
+h2 {
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    border-radius: 10px;
+    background: var(--secondary-color);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
+}
+
+footer {
+    background: var(--primary-color);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 60px 0;
+}
